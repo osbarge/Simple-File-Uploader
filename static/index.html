@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>File Uploader for InsideSherpa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+    <h2 class="h2">File Uploader for InsideSherpa</h2>
+    <div class="droparea">Drop Files Here</div>
+    <h2 class="h2">List of files already uploaded:</h2>
+    <div class="centredbox" id="tablearea"></div>
+</div>
+
+<br>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/x-handlebars-template" id="tableTemplate">
+    <table class="table table-striped">
+        {{#each filenames}}
+            <tr>
+                <td>{{this}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</script>
+
+
+<script src="upload.js"> </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,32 @@
+.droparea {
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    color: #555;
+    border: 2px dashed #555;
+    border-radius: 7px;
+    cursor: default;
+}
+
+.droparea.hover
+{
+    color: #f00; 
+    border-color: blue; 
+    border-style: solid;
+    box-shadow: inset 0 3px 4px #888;
+}
+
+.centredbox {
+    width:300px;
+    height:300px;
+    position:fixed;
+    margin-left:-150px; /* half of width */
+    margin-top:-150px;  /* half of height */
+    top:50%;
+    left:50%;
+}
+
+
+
+
